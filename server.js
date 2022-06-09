@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const userRoutes = require("./Router/router");
 const diaryRoutes = require("./Router/diaryRoutes");
-require("dotenv").congig();
+require("dotenv").config();
 const port = process.env.PORT || 1110;
 
 const app = express();
