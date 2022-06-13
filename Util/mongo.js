@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const url = "mongodb://localhost/DiaryDb";
-// const url = process.env.ATLAS;
+// const url = "mongodb://localhost/DiaryDb";
+const url = process.env.ATLAS;
 
 mongoose
   .connect(url)
