@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const schema = mongoose.Schema
-const diarySchema = new schema (
+const schema = mongoose.Schema;
+const diarySchema = new schema(
   {
     photo: {
       type: String,
@@ -13,7 +13,6 @@ const diarySchema = new schema (
     },
     note: {
       type: String,
-      required: true,
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,

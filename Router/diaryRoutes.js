@@ -18,7 +18,7 @@ router.get("/user/:userId/diary", getAllDiary);
 router.patch("/diary/:diaryId/photo", uploadPhoto, updateDiarywithPhoto);
 
 router
-  .route("/diary/:diaryId")
+  .route("/user/:userId/diary/:diaryId")
   .get(getOneDiary)
   .patch(updateDiarywithoutPhoto)
   .delete(deleteDiary);

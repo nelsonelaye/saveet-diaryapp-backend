@@ -9,10 +9,10 @@ const createDiarywithPhoto = async (req, res) => {
     const userId = req.params.userId;
     const user = await userModel.findById(userId);
 
-    const result = await cloudinary.uploader.upload(req.file.path);
+    // const result = await cloudinary.uploader.upload(req.file.path);
     const diary = await new diaryModel({
-      photo: result.secure_url,
-      photoId: result.public_id,
+      // photo: result.secure_url,
+      // photoId: result.public_id,
       title,
       note,
     });
